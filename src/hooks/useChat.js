@@ -53,7 +53,7 @@ export function useChat(settings, userId) {
     } catch (error) {
       console.error('Error:', error);
       setMessages(prev => [...prev, { 
-        text: 'Sorry, I encountered an error processing your request.', 
+        text: 'Sorry, Please confirm your API key.', 
         isUser: false 
       }]);
     } finally {
